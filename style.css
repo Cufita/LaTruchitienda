@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500;700&display=swap");
+
+/* Css de todo */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1300px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.containerDescripcion {
+  max-width: 1300px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+/* Css del Header */
+
+header {
+  background-color: rgb(6, 119, 194);
+  height: 80px;
+}
+
+.headerTitle {
+  color: rgb(255, 254, 254);
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 26px;
+  font-family: "Roboto Slab", serif;
+  width: 200px;
+  padding-left: 2px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.bolsitaLogo {
+  display: flex;
+  margin-top: 5px;
+  width: 65px;
+  height: 65px;
+}
+
+/* Css del body */
+
+body {
+  font-family: "Roboto Slab", serif;
+  background-image: linear-gradient(
+      rgba(228, 228, 228, 0.87),
+      rgba(228, 228, 228, 0.87)
+    ),
+    url(./img/puntito.jpg);
+}
+
+.bodyDetalle {
+  font-family: "Roboto Slab", serif;
+  background-image: linear-gradient(
+      rgba(56, 56, 56, 0.87),
+      rgba(56, 56, 56, 0.87)
+    ),
+    url(./img/puntito.jpg);
+}
+
+.messageCartEmpty {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-family: "Roboto Slab", serif;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 60px;
+  font-size: 40px;
+}
+
+.sadFace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addButton {
+  display: flex;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+.addButton a img {
+  width: 90px;
+}
+
+/* Css del Add Button */
+
+.formulario {
+  display: none;
+  background-color: rgb(58, 142, 211);
+  position: fixed;
+  height: 400px;
+  width: 340px;
+  bottom: 20px;
+  right: 25px;
+  border: 7px solid rgb(58, 142, 211);
+  border-radius: 15px;
+  outline: 5px;
+}
+
+.addSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  max-width: 800px;
+}
+
+.tituloAdd {
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-left: 20px;
+  display: flex;
+  height: 40px;
+  width: 100%;
+}
+
+.categoria {
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+  display: flex;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  margin-left: 20px;
+  height: 40px;
+  width: 100%;
+}
+
+.descripcionAdd {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  margin-left: 20px;
+  display: flex;
+  width: 100%;
+  resize: none;
+}
+.addCloseButton {
+  display: flex;
+  gap: 15px;
+  margin-left: 20px;
+}
+
+.addButtonForm {
+  display: flex;
+  background-color: white;
+  padding: 5px 20px 5px 20px;
+  font-family: "Roboto Slab", serif;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+.closeButtonForm {
+  display: flex;
+  background-color: white;
+  padding: 5px 20px 5px 20px;
+  font-family: "Roboto Slab", serif;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Css de la lista */
+
+.productito {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin: 15px;
+  background-color: aliceblue;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.itemImagen {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  margin-left: 15px;
+}
+
+.itemMore {
+  font-family: "Roboto Slab", serif;
+  margin: 15px;
+  color: white;
+  background-color: rgb(58, 142, 211);
+  padding: 15px;
+  border: none;
+  border-radius: 100px;
+}
+/* Css del detalle del producto */
+
+.productitoItem {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemDescripcion {
+  width: 150px;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  padding: 15px;
+  background-color: aliceblue;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.productoDetalle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.botonCerrarDetalle {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 767px) {
+}
+@media screen and (min-width: 950px) {
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Hola Jony! Como estas? El unico tema que tuve es que a la hora de cerrar el detalle de un producto no lo puedo cerrar.
+       Entiendo que el problema esta en que llamo un AddEventListener sobre un ID que todavia no existe.
+        Pero no se me ocurre como hacerlo la verdad si deseo que el detalle se cree con JS. Espero tu correccion!
+       Tu Alumne de Escuela Dev Rock: Facundo Amores  -->
+    <!-- Metas -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body id="cuerpo">
+    <header>
+      <div class="container">
+        <div class="logo">
+          <div class="bolsitaLogo">
+            <img src="./img/bolsaDeCompras.png" alt="" />
+          </div>
+          <h1 class="headerTitle">La truchitienda</h1>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="containerDescripcion">
+        <div class="itemDescripcion" id="itemDescripcion"></div>
+      </div>
+      <div class="container">
+        <div class="items">
+          <ul class="ulItems" id="ulItems"></ul>
+        </div>
+      </div>
+      <div class="empty" id="empty">
+        <p class="messageCartEmpty" id="messageCartEmpty">
+          No hay ningun producto en el carrito
+        </p>
+        <div class="sadFace" id="sadFace">
+          <img src="./img/caraTriste.png" alt="Carita Triste" />
+        </div>
+      </div>
+    </section>
+    <div class="addButton" id="addButton">
+      <a id="addButtonLink" href="#">
+        <img src="./img/plus.png" alt="Add button" />
+      </a>
+    </div>
+    <div class="formulario" id="formulario">
+      <form class="addSection" action="">
+        <input
+          class="tituloAdd"
+          type="text"
+          placeholder="Ingrese el alimento"
+          required
+          id="titulo"
+        />
+        <select class="categoria" name="" id="categoria" required>
+          <option class="categoriaIconos" value="viveres.png">🍞Viveres</option>
+          <option class="categoriaIconos" value="productos-lacteos.png">
+            🥛Lacteos
+          </option>
+          <option class="categoriaIconos" value="comida-sana.png">
+            🥑Verduras
+          </option>
+          <option class="categoriaIconos" value="dispositivo.png">
+            📱Electronica
+          </option>
+        </select>
+        <textarea
+          placeholder="Que considera que debamos de tener en cuenta para su producto"
+          class="descripcionAdd"
+          name=""
+          id="detalle"
+          cols="25"
+          rows="9"
+          required
+        ></textarea>
+        <div class="addCloseButton">
+          <button type="submit" class="addButtonForm" id="addButtonForm">
+            Agregar
+          </button>
+          <button type="button" id="closeButtonForm" class="closeButtonForm">
+            Cerrar
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
